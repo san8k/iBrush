@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    min-width: 310px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: "Playfair Display", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 18px;
+    min-width: 172px;
+}
+
+.header__line {
+    width: 37.2%;
+    height: 2px;
+    margin-left: 6.25%;
+    margin-bottom: 5px;
+    background-color: #000;
+}
