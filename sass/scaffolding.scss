@@ -16,3 +16,9 @@ html {
     padding: 0 5px;
     min-width: 320px;
 }
+
+@media (min-width: 480px) {
+    .page {
+        padding: 0 20px;
+    }
+}

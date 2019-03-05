@@ -59,3 +59,22 @@
     }
 }
 
+@media (min-width: 480px) {
+    .footer {
+        margin-top: 29px;
+    }
+
+    .paginator__title {
+        display: inline;
+        font-family: "Noto Sans";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-right: 23px;
+    }
+
+    .paginator__item {
+        margin-left: 37px;
+    }
+}
+
