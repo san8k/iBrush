@@ -8,9 +8,10 @@
     position: relative;
     width: 100%;
     display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 202px repeat(2, 48px) 80px repeat(4, 48px);
-    grid-template-columns: repeat(4, 73px);
+    grid-column-gap: 2%;
+    grid-row-gap: 2vw;
+    grid-template-rows: 62.7vw repeat(2, 14.8vw) 88px repeat(4, 14.8vw);
+    grid-template-columns: repeat(4, 23.5%);
 }
 
 .photos__preview {
@@ -18,8 +19,7 @@
     margin: 0;
 
     &--big {
-        width: 310px;
-        height: 202px;
+        width: 100%;
         grid-column: 1 / -1;
     }
 
@@ -32,13 +32,15 @@
 
 .date-label {
     position: relative;
-    display: inline-block;
-    width: 73px;
-    height: 48px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     opacity: 0.8;
     text-align: center;
-
+    vertical-align: middle;
     font-family: "Noto Serif";
     font-weight: 400;
     font-size: 18px;
@@ -46,8 +48,11 @@
 
     &--big {
         position: absolute;
+        width: 25.7%;
+        height: 8.5%;
         top: 6px;
         left: 6px;
+        
     }
 
     &--17sen {
@@ -55,9 +60,19 @@
     }
 }
 
+.date-label__date {
+    margin-top: -2px;
+}
+
+.date-label--big .date-label__date {
+    margin-top: -4px;
+}
+
 .date-label__month {
     font-size: 14px;
     line-height: 18px;
+    margin: 0;
+    margin-top: -3px;
 }
 
 .date-label__arrow {
@@ -67,16 +82,21 @@
     border: 3px solid transparent;
     border-left-color: #000;
     border-right: 0;
-    top: 10px;
-    right: 10px;
+    top: 25%;
+    right: 10%;
 }
 
 .photos-ad {
+    width: 100%;
+    height: 80px;
+
     &--mobile {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     display: flex;
     background-color: #fbf6e9;
+    margin: 0;
+    margin-top: 1.3%;
     }
 
     &--top,
@@ -89,6 +109,7 @@
     width: 100px;
     height: 80px;
     margin-right: 19px;
+    margin-bottom: 10px;
 }
 
 .photos-ad__text-block {
@@ -97,7 +118,7 @@
 }
 
 .photos-ad__teaser {
-    margin: 7px 0;
+    margin: 6px 0 3px;
     color: #bebebe;
     font-family: "Noto Sans";
     font-size: 10px;
@@ -106,6 +127,7 @@
 
 .photos-ad__title {
     margin: 0;
+    margin-bottom: 2px;
     font-family: "Noto Sans";
     line-height: 18px;
     font-size: 13px;
