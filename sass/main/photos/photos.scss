@@ -1,0 +1,107 @@
+.photos {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 2%;
+    grid-row-gap: 2vw;
+    grid-template-rows: 62.7vw repeat(2, 14.8vw) 88px repeat(4, 14.8vw);
+    grid-template-columns: repeat(4, 23.5%);
+}
+
+.photos__preview {
+    width: 100%;
+    margin: 0;
+
+    &--big {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    &--20,
+    &--21,
+    &--22 {
+        display: none;
+    }
+}
+
+.big-photo-caption {
+    display: none;
+}
+
+// Tablet styles
+
+@media (min-width: 480px) {
+    .photos {
+        grid-column-gap: 2.4%;
+        grid-row-gap: 2.31vw;
+        grid-template-rows: 39.5% repeat(7, 1fr);
+        grid-template-columns: repeat(5, 18.1%);
+    }
+
+    .photos__preview--20 {
+        display: block;
+    }
+}
+
+// Desktop styles
+
+@media (min-width: 768px) {
+    .photos {
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 455px 24px repeat(8, 104px);
+    }
+
+    .photos__preview {
+        width: 160px;
+        height: 104px;
+
+        &--big {
+            width: 700px;
+            height: 455px;
+        }
+
+        &--21,
+        &--22 {
+            display: block;
+        }
+    }
+
+    .big-photo-caption {
+        position: relative;
+        display: block;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin: 0;
+        padding-left: 2px;
+    }
+
+    .big-photo-caption__title,
+    .big-photo-caption__author {
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans";
+        font-size: 13px;
+    }
+
+    .big-photo-caption__title {
+        font-weight: bold;
+        margin-top: -4px;
+        margin-bottom: 4px;
+    }
+
+    .big-photo-caption__author {
+        color: #acacac;
+    }
+
+    .big-photo-caption__arrow {
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        left: 50%;
+        top: -25px;
+        transform: translateX(-50%) rotate(45deg);
+    }
+}

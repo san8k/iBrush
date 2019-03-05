@@ -1,8 +1,10 @@
 @import './normalize.scss';
 @import './fonts.scss';
 @import './scaffolding.scss';
-@import './header.scss';
-@import './main.scss';
-@import './photos.scss';
-@import './footer.scss';
-@import './paginator.scss';
+@import './header/header.scss';
+@import './main/main.scss';
+@import './main/photos/photos.scss';
+@import './main/photos/date-label.scss';
+@import './main/photos/photos-ad.scss';
+@import './footer/footer.scss';
+@import './footer/paginator.scss';
