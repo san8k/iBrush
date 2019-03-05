@@ -59,6 +59,8 @@
     }
 }
 
+// Tablet styles
+
 @media (min-width: 480px) {
     .footer {
         margin-top: 29px;
@@ -74,6 +76,22 @@
     }
 
     .paginator__item {
+        margin-left: 37px;
+    }
+}
+
+// Desktop styles
+
+@media (min-width: 768px) {
+    .footer {
+        width: 700px;
+    }
+
+    .paginator__item {
+        margin-left: 38px;
+    }
+
+    .paginator__link--next {
         margin-left: 37px;
     }
 }
